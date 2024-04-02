@@ -305,6 +305,10 @@ section{
 }
 
 /*Skills CSS*/
+.logos{
+                    height: 50px;
+                    width: 65px;
+}
 
 .skills .title::after{
                     content: "what I know";
@@ -319,6 +323,8 @@ section{
 }
 .skills .skills-content .left p{
                     text-align: justify;
+                    font-size: 20px;
+  
 }
 .skills .skills-content .left a{
                     display: inline-block;
