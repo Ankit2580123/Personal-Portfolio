@@ -304,6 +304,7 @@ section{
                     font-size: 30px;
 }
 
+
 /* Education Section CSS */
 .education .title::before{
     content: "";
