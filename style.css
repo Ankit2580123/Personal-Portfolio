@@ -304,12 +304,148 @@ section{
                     font-size: 30px;
 }
 
+/* Education Section CSS */
+.education .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background:#111;
+    transform: translateX(-50%);
+}
+.education .title::after{
+    content: "my journey";
+    position: absolute;
+    font-size: 18px;
+    bottom: -10px;
+    left: 50%;
+    padding: 5px;
+    color: #29bf12;
+    background:#fff;
+    transform: translateX(-50%);
+}
+
+.education .education-content .edu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    transition: all 0.3s ease;
+    flex-direction: row; /* Default layout for larger screens */
+}
+
+.education .education-content .edu-item:hover {
+    background-color: #f4f4f4;
+    border-color: #29bf12;
+}
+
+.education .education-content .edu-item h3 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.education .education-content .edu-item p {
+    font-size: 18px;
+    color: #555;
+    margin: 5px 0;
+    font-weight: 400;
+}
+.education .education-content .edu-item .place{
+    margin-left: 5px;
+}
+.education .education-content .edu-item .time{
+    margin-left: 5px;
+}
+.education .education-content .edu-item span {
+    font-size: 14px;
+    color: #777;
+    font-weight: 300;
+}
+
+
+.education .education-content .edu-item:hover h3 {
+    color: #29bf12;
+}
+
+.education .education-content .edu-item:hover p {
+    color: #111;
+}
+
+.education .education-content .edu-item:hover span {
+    color: #111;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .education .education-content .edu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .education .education-content .edu-item h3 {
+        font-size: 16px;
+    }
+
+    .education .education-content .edu-item p {
+        font-size: 14px;
+    }
+
+    .education .education-content .edu-item span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .education .education-content .edu-item {
+        padding: 10px;
+    }
+
+    .education .education-content .edu-item h3 {
+        font-size: 14px;
+    }
+
+    .education .education-content .edu-item p {
+        font-size: 18px;
+    }
+
+    .education .education-content .edu-item span {
+        font-size: 10px;
+    }
+
+    .education .title::after {
+        content: "my journey"; /* Shortened text on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .education .education-content .edu-item {
+        padding: 8px;
+    }
+
+    .education .education-content .edu-item h3 {
+        font-size: 14px;
+    }
+
+    .education .education-content .edu-item p {
+        font-size: 23px;
+    }
+
+    .education .education-content .edu-item span {
+        font-size: 10px;
+    }
+}
+
+
 /*Skills CSS*/
 .logos{
                     height: 50px;
                     width: 65px;
 }
-
 .skills .title::after{
                     content: "what I know";
 }
@@ -319,12 +455,12 @@ section{
 .skills .skills-content .left .text{
                     margin-bottom: 5px;
                     font-weight: 500;
-                    font-size: 23px;
+                    font-size: 26px;
 }
 .skills .skills-content .left p{
                     text-align: justify;
+                   
                     
-  
 }
 .skills .skills-content .left a{
                     display: inline-block;
@@ -368,7 +504,7 @@ section{
                     
                     left: 0;
                     top: 0;
-                    background-color: #29bf12;
+                    background-color: #3f4a3d;
 }
 .skills .skills-content .right .html::before{
                     width: 90%;
@@ -377,13 +513,19 @@ section{
                     width: 60%;
 }
 .skills .skills-content .right .javascript::before{
-                    width: 40%;
+                    width: 50%;
 }
 .skills .skills-content .right .c::before{
                     width: 70%;
 }
 .skills .skills-content .right .python::before{
-                    width: 50%;
+                    width: 70%;
+}
+.skills .skills-content .right .django::before{
+    width: 50%;
+}
+.skills .skills-content .right .postgre::before{
+    width: 70%;
 }
 
 /*Projects CSS*/
@@ -444,6 +586,9 @@ section{
                     justify-content: center;
                     
 }
+
+
+
 
 /*Contact*/
 .contact .title::after{
