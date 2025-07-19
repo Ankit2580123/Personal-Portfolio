@@ -21,7 +21,7 @@ $(document).ready(function(){
 /*Typing animation script*/
 
 var typed = new Typed(".typing", {
-                    strings: ["Python FullStack Enthusiastic.", "Django Developer."],
+                    strings: [".NET FullStack Developer"],
                     typeSpeed:120,
                     backSpeed:60,
                     loop:true
